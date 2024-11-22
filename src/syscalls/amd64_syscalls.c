@@ -2139,6 +2139,14 @@ const struct syscall_descriptor amd64_syscall_list[] = {
          [ARG_1] = {"vec", 8},
          [ARG_2] = {"vlen", 8},
      }},
+    {"rseq",
+      334,
+      {
+        [ARG_0] = {"rseq", 8},
+        [ARG_1] = {"rseq_len", 4},
+        [ARG_2] = {"flags", 4},
+        [ARG_3] = {"sig", 4},
+      }},
 };
 
 const size_t amd64_syscall_list_size =

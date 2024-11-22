@@ -2257,6 +2257,14 @@ const struct syscall_descriptor i386_syscall_list[] = {
          [ARG_1] = {"vec", 4},
          [ARG_2] = {"vlen", 4},
      }},
+    {"rseq",
+      386,
+      {
+        [ARG_0] = {"rseq", 4},
+        [ARG_1] = {"rseq_len", 4},
+        [ARG_2] = {"flags", 4},
+        [ARG_3] = {"sig", 4},
+      }},
 };
 
 const size_t i386_syscall_list_size =
